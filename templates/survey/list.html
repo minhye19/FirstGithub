@@ -11,7 +11,7 @@
 <body>
   <h1>survey 예제</h1>
   <div id="wrap">
-    <form method="post" action="save_survey">
+    <form method="post" action="/survey/save_survey">
         {% csrf_token %}
         <p class="sub">{{survey.question}}</p>
         <p><input type="radio" name="num" value="1" >{{survey.ans1}}</p>
