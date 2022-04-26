@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result.html</title>
+</head>
+<body>
+<div id="wrap">
+    <h1>설문조사 결과보기 예제</h1>
+    <table>
+        <tr>
+            <th>문항</th>
+            <th>응답수</th>
+        </tr>
+        <tr>
+        	<td>{{surveyList}}</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="투표하기" onclick="location='/survey'">
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
