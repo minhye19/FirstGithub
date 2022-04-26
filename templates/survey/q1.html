@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>첫번째 질문</title>
+</head>
+<body>
+ <h2>Q. 어디가 더 좋아?</h2>
+<form action="/survey/q2/" method="GET">
+  <div>
+      <input type="radio" class="btn" name="whereBetter" id="mountainBetter" value="mountain">
+      <label for="mountainBetter">산이 좋아!</label>
+  </div>
+
+  <div>
+      <input type="radio" class="btn" name="whereBetter" id="seaBetter" value="sea">
+      <label for="seaBetter">바다가 좋아!</label>
+  </div>
+  <input type="submit" value="제출">
+ </form>
+
+
+ <style>
+.btn{
+    opacity:0;
+}
+
+input[type=radio]:checked + label
+{
+    background : #ccc;
+    color : red;
+}
+ </style>
+</body>
+</html>

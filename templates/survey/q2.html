@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>두번째 질문</title>
+</head>
+<body>
+    <h3>Q1에서 넘어온 데이터 : </h3>
+    <h3>{{select}}</h3>
+
+    <h2>Q. 뭐가 더 좋아?</h2>
+    <form action="/answer/a1/" method="GET">
+        <div>
+            <input type="radio" class="btn" name="whereBetter" id="walk" value="walk">
+            <label for="walk">산책이 좋아!</label>
+        </div>
+        <input type="submit" value="제출">
+    </form>
+
+    <form action="/answer/a2/" method="GET">
+        <div>
+            <input type="radio" class="btn" name="whereBetter" id="fishing" value="fishing">
+            <label for="fishing">낚시가 좋아!</label>
+        </div>
+        <input type="submit" value="제출">
+    </form>
+
+ <style>
+.btn{
+    opacity:0;
+}
+
+input[type=radio]:checked + label
+{
+    background : #ccc;
+    color : red;
+}
+ </style>
+</body>
+</html>

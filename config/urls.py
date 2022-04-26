@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import home.views
-import question.views
+import survey.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home.views.home, name='home'),
-    path('q1/', question.views.q1, name='q1'),
-    path('q2/', question.views.q2, name='q2'),
+    path('', include('home.urls')),
+    path('survey/', include('survey.urls')),
+    path('answer/', include('answer.urls')),
 ]

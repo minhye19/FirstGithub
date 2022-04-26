@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>시작 페이지</title>
+</head>
+<body>
+ <h2>이곳은 기분어때 페이지 입니다. 테스트를 시작하세요!</h2>
+<form action="survey/list/" method="GET">
+    <div>
+      <input type="radio" class="btn" name="feelingtest" id="feelingtest" value="feelingtest">
+      <label for="feelingtest">오늘의 기분 test</label>
+    </div>
+    <input type="submit" value="제출">
+</form>
+<!--<form action="/tripsearch/" method="get">-->
+<!--  <div>-->
+<!--      <input type="radio" class="btn" name="tripsearch" id="tripsearch" value="tripsearch">-->
+<!--      <label for="tripsearch">여행지 검색</label>-->
+<!--  </div>-->
+<!--  <input type="submit" value="제출">-->
+<!-- </form>-->
+
+
+ <style>
+.btn{
+    opacity:0;
+}
+
+input[type=radio]:checked + label
+{
+    background : #ccc;
+    color : red;
+}
+ </style>
+</body>
+</html>
